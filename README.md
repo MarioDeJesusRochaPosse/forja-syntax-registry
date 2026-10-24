@@ -25,3 +25,16 @@ registry.lock.json resolved artifact metadata
 
 See [`registry.json`](registry.json) for the supported languages and
 [`scopes/default.json`](scopes/default.json) for the semantic scope contract.
+
+## Current catalog
+
+The catalog is intentionally limited to pinned upstream repositories and
+currently includes Rust, JSON, JavaScript, TypeScript, Python, Go, C, C++,
+Java, Bash, Ruby, PHP, C#, TOML, YAML, Lua and Markdown. Each entry records
+the upstream Git revision, license, query path and artifact size limit.
+
+Forja Studio reads this manifest from the public `main` branch, downloads the
+matching `.so` or `.dll` from the `grammars` release, verifies `SHA256SUMS`,
+downloads the query from the same registry, and persists both in its local
+syntax cache. No compiled parser is committed to this repository or shipped
+inside the desktop binary.

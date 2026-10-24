@@ -28,7 +28,13 @@ for entry in registry["languages"]:
         with tarfile.open(archive, "r:gz") as bundle:
             bundle.extractall(source, filter="data")
         roots = [os.path.join(source, d) for d in os.listdir(source)]
-        parser = next((os.path.join(root, "src", "parser.c") for root in roots if os.path.exists(os.path.join(root, "src", "parser.c"))), None)
+        subdir = entry.get("subdir")
+        parser_candidates = []
+        for root in roots:
+            if subdir:
+                parser_candidates.append(os.path.join(root, subdir, "src", "parser.c"))
+            parser_candidates.append(os.path.join(root, "src", "parser.c"))
+        parser = next((candidate for candidate in parser_candidates if os.path.exists(candidate)), None)
         if not parser:
             raise SystemExit(f"parser.c not found for {name}")
         src_dir = os.path.dirname(parser)
@@ -45,6 +51,11 @@ for entry in registry["languages"]:
         scanner = os.path.join(src_dir, "scanner.c")
         if os.path.exists(scanner):
             sources.append(scanner)
-        subprocess.run([compiler, *flags, *sources, "-o", output], check=True)
+        include_dirs = {src_dir}
+        for include_root, _, files in os.walk(source):
+            if "parser.h" in files:
+                include_dirs.add(include_root)
+        include_flags = [flag for directory in sorted(include_dirs) for flag in ("-I", directory)]
+        subprocess.run([compiler, *flags, *include_flags, *sources, "-o", output], check=True)
         print(f"built {output}")
 PY
