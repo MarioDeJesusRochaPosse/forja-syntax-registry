@@ -1,6 +1,10 @@
 name: Build parser binaries
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - registry.lock.json
   workflow_dispatch:
   schedule:
     - cron: '0 3 * * 1'
