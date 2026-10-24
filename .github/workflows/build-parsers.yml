@@ -1,0 +1,67 @@
+name: Build parser binaries
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            platform: linux-x86_64
+            extension: so
+          - os: windows-latest
+            platform: windows-x86_64
+            extension: dll
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Windows compiler
+        if: runner.os == 'Windows'
+        run: choco install llvm -y
+      - name: Build native parsers
+        shell: bash
+        env:
+          PLATFORM: ${{ matrix.platform }}
+          OUT_DIR: dist
+        run: bash .github/scripts/build-parsers.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parsers-${{ matrix.platform }}
+          path: dist/*-${{ matrix.platform }}.${{ matrix.extension }}
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          pattern: parsers-*
+          merge-multiple: true
+      - name: Generate checksums
+        run: sha256sum dist/* > dist/SHA256SUMS
+      - name: Generate lockfile
+        run: python3 .github/scripts/generate-lock.py
+      - name: Commit lockfile
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(registry): update native parser lockfile"
+          file_pattern: registry.lock.json
+      - name: Publish grammar release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: grammars
+          name: Forja grammar binaries
+          prerelease: true
+          make_latest: false
+          files: dist/*
+          body: Built from the pinned upstream revisions in registry.json.

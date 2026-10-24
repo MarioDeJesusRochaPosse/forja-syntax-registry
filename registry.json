@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1",
+  "registryVersion": "0.1.0",
+  "platforms": ["linux-x86_64", "windows-x86_64"],
+  "languages": [
+    {
+      "id": "rust",
+      "version": "0.25.0",
+      "githubRepo": "tree-sitter/tree-sitter-rust",
+      "revision": "77a3747266f4d621d0757825e6b11edcbf991ca5",
+      "subdir": null,
+      "queries": {
+        "path": "queries/rust/highlights.scm",
+        "sha256": null
+      },
+      "license": "MIT",
+      "sizeLimitBytes": 5242880
+    },
+    {
+      "id": "json",
+      "version": "0.24.0",
+      "githubRepo": "tree-sitter/tree-sitter-json",
+      "revision": "254c42a6476413b776221e03982ac8ae159eeb72",
+      "subdir": null,
+      "queries": {
+        "path": "queries/json/highlights.scm",
+        "sha256": null
+      },
+      "license": "MIT",
+      "sizeLimitBytes": 5242880
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1",
+  "mappings": {
+    "comment": "syntax.comment",
+    "constant": "syntax.constant",
+    "constant.builtin": "syntax.constant.builtin",
+    "escape": "syntax.escape",
+    "function": "syntax.function",
+    "function.builtin": "syntax.function.builtin",
+    "keyword": "syntax.keyword",
+    "keyword.control": "syntax.keyword.control",
+    "keyword.modifier": "syntax.keyword.modifier",
+    "label": "syntax.label",
+    "number": "syntax.number",
+    "operator": "syntax.operator",
+    "property": "syntax.property",
+    "punctuation": "syntax.punctuation",
+    "string": "syntax.string",
+    "string.escape": "syntax.string.escape",
+    "tag": "syntax.tag",
+    "type": "syntax.type",
+    "type.builtin": "syntax.type.builtin",
+    "variable": "syntax.variable",
+    "variable.parameter": "syntax.variable.parameter",
+    "invalid": "syntax.invalid"
+  }
+}
