@@ -10,7 +10,7 @@ EXT=so
 PYTHON=python3
 command -v "$PYTHON" >/dev/null 2>&1 || PYTHON=python
 "$PYTHON" - <<'PY' "$PLATFORM" "$OUT_DIR" "$EXT"
-import json, os, subprocess, sys, tempfile, urllib.request, zipfile
+import json, os, shutil, subprocess, sys, tempfile, urllib.request, tarfile
 platform, out_dir, ext = sys.argv[1:]
 with open("registry.json", encoding="utf-8") as f:
     registry = json.load(f)
@@ -25,17 +25,26 @@ for entry in registry["languages"]:
         urllib.request.urlretrieve(url, archive)
         source = os.path.join(tmp, "source")
         os.makedirs(source)
-        subprocess.run(["tar", "-xzf", archive, "-C", source], check=True)
+        with tarfile.open(archive, "r:gz") as bundle:
+            bundle.extractall(source, filter="data")
         roots = [os.path.join(source, d) for d in os.listdir(source)]
         parser = next((os.path.join(root, "src", "parser.c") for root in roots if os.path.exists(os.path.join(root, "src", "parser.c"))), None)
         if not parser:
             raise SystemExit(f"parser.c not found for {name}")
         src_dir = os.path.dirname(parser)
         output = os.path.abspath(os.path.join(out_dir, f"{name}-{platform}.{ext}"))
-        compiler = "clang"
+        compiler = shutil.which("clang")
+        if not compiler and platform.startswith("windows-"):
+            compiler = r"C:\Program Files\LLVM\bin\clang.exe"
+        if not compiler or not os.path.exists(compiler):
+            raise SystemExit("clang was not found on the build runner")
         flags = ["-shared", "-O2"]
         if not platform.startswith("windows-"):
             flags.append("-fPIC")
-        subprocess.run([compiler, *flags, parser, "-o", output], check=True)
+        sources = [parser]
+        scanner = os.path.join(src_dir, "scanner.c")
+        if os.path.exists(scanner):
+            sources.append(scanner)
+        subprocess.run([compiler, *flags, *sources, "-o", output], check=True)
         print(f"built {output}")
 PY
