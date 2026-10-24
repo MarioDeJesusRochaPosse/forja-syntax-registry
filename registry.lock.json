@@ -1,5 +1,46 @@
 {
   "lockfileVersion": 1,
   "releaseTag": "grammars",
-  "packages": {}
+  "packages": {
+    "rust": {
+      "id": "rust",
+      "version": "0.25.0",
+      "revision": "77a3747266f4d621d0757825e6b11edcbf991ca5",
+      "artifacts": {
+        "linux-x86_64": {
+          "target": "linux-x86_64",
+          "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/rust-linux-x86_64.so",
+          "sha256": "1de56dd1c216f8fac5dea487deeecd221f6057aa6d0735da641df18f1fd2db60",
+          "sizeBytes": 1149152
+        },
+        "windows-x86_64": {
+          "target": "windows-x86_64",
+          "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/rust-windows-x86_64.dll",
+          "sha256": "ff9c77a7dca544fb4ce0735e033d181695f9e51f3ccf76f4ed3999d655a08933",
+          "sizeBytes": 1229312
+        }
+      },
+      "queriesSha256": "aefa9e90548ef604a2f285ea5b2be9511bfc110d67734b62adca49c0bad791da"
+    },
+    "json": {
+      "id": "json",
+      "version": "0.24.0",
+      "revision": "254c42a6476413b776221e03982ac8ae159eeb72",
+      "artifacts": {
+        "linux-x86_64": {
+          "target": "linux-x86_64",
+          "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/json-linux-x86_64.so",
+          "sha256": "21e2c9fe05f5c5ef366740e068399498b131a152ac5bfe82b38c24c0e41d9792",
+          "sizeBytes": 20280
+        },
+        "windows-x86_64": {
+          "target": "windows-x86_64",
+          "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/json-windows-x86_64.dll",
+          "sha256": "dde7522ece6e97c19d55d7f263ec72c7026a4a0e414b755eda66400792e1c0c7",
+          "sizeBytes": 110592
+        }
+      },
+      "queriesSha256": "6f550109acb7e056ca3298ce391e561c135733d66f0ed2c27b218ef8f3b49b5c"
+    }
+  }
 }
