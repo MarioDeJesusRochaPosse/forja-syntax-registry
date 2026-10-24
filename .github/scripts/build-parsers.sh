@@ -7,7 +7,9 @@ mkdir -p "$OUT_DIR"
 EXT=so
 [[ "$PLATFORM" == windows-* ]] && EXT=dll
 
-python3 - <<'PY' "$PLATFORM" "$OUT_DIR" "$EXT"
+PYTHON=python3
+command -v "$PYTHON" >/dev/null 2>&1 || PYTHON=python
+"$PYTHON" - <<'PY' "$PLATFORM" "$OUT_DIR" "$EXT"
 import json, os, subprocess, sys, tempfile, urllib.request, zipfile
 platform, out_dir, ext = sys.argv[1:]
 with open("registry.json", encoding="utf-8") as f:
