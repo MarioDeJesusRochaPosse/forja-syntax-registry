@@ -30,7 +30,7 @@ See [`registry.json`](registry.json) for the supported languages and
 
 The catalog is intentionally limited to pinned upstream repositories and
 currently includes Rust, JSON, JavaScript, TypeScript, Python, Go, C, C++,
-Java, Bash, Ruby, PHP, C#, TOML, YAML, Lua and Markdown. Each entry records
+Java, Bash, Ruby, PHP, C#, TOML, YAML, Lua, Markdown and QML. Each entry records
 the upstream Git revision, license, query path and artifact size limit.
 
 Forja Studio reads this manifest from the public `main` branch, downloads the
