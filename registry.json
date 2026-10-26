@@ -226,6 +226,19 @@
       },
       "license": "MIT",
       "sizeLimitBytes": 5242880
+    },
+    {
+      "id": "qml",
+      "version": "0.3.1",
+      "githubRepo": "yuja/tree-sitter-qmljs",
+      "revision": "de96ed62abded51fcdfcbeaaa120e0dd0d20c697",
+      "subdir": null,
+      "queries": {
+        "path": "queries/qml/highlights.scm",
+        "sha256": "dd643d8d4353f7c663e73d1e048676536d4b5af144354e0e8f3a9d636ce5a4c5"
+      },
+      "license": "MIT",
+      "sizeLimitBytes": 16777216
     }
   ]
 }

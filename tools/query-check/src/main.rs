@@ -13,6 +13,7 @@ fn symbol_for(language_id: &str) -> String {
     match language_id {
         "csharp" | "c-sharp" => "tree_sitter_c_sharp".to_string(),
         "objective-c" | "objc" => "tree_sitter_objc".to_string(),
+        "qml" => "tree_sitter_qmljs".to_string(),
         _ => format!("tree_sitter_{}", language_id.replace('-', "_")),
     }
 }
@@ -67,13 +68,31 @@ fn check_language(
         return Err("plataforma no soportada por el validador".into());
     };
     let artifact = workdir.join(&name);
-    let url = format!("{release_base}/{name}");
-    match download(&url, &artifact) {
-        Ok(()) => {}
-        // Un PR que añade un lenguaje todavía no puede descargar su binario.
-        Err(_) => {
-            println!("SKIP {id}: sin artefacto publicado todavía");
-            return Ok(());
+    let local_artifacts = std::env::var_os("FORJA_QUERY_CHECK_ARTIFACT_DIR").map(PathBuf::from);
+    if let Some(directory) = local_artifacts {
+        // Desarrollo local: valida la query contra un binario recién compilado
+        // sin esperar a que CI lo publique en el release. Los lenguajes que no
+        // estén en el directorio se descargan como siempre.
+        let local = directory.join(&name);
+        if local.exists() {
+            std::fs::copy(&local, &artifact)
+                .map_err(|error| format!("no se pudo copiar el artefacto local: {error}"))?;
+        } else {
+            let url = format!("{release_base}/{name}");
+            if download(&url, &artifact).is_err() {
+                println!("SKIP {id}: sin artefacto publicado todavía");
+                return Ok(());
+            }
+        }
+    } else {
+        let url = format!("{release_base}/{name}");
+        match download(&url, &artifact) {
+            Ok(()) => {}
+            // Un PR que añade un lenguaje todavía no puede descargar su binario.
+            Err(_) => {
+                println!("SKIP {id}: sin artefacto publicado todavía");
+                return Ok(());
+            }
         }
     }
 
