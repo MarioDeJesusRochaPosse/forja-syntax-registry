@@ -15,3 +15,8 @@ jobs:
           python-version: '3.12'
       - name: Validate manifests and queries
         run: python3 .github/scripts/validate-registry.py
+      # Compila cada query contra el binario publicado de su gramática. Sin
+      # esto, una query con tipos de nodo inexistentes (p. ej. `crate` en Rust)
+      # pasa la validación de texto y rompe el resaltado en el editor.
+      - name: Validate queries against published grammars
+        run: cargo run --quiet --release --manifest-path tools/query-check/Cargo.toml

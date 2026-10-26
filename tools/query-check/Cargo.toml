@@ -1,0 +1,12 @@
+[package]
+name = "query-check"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+hex = "0.4"
+libloading = "0.8"
+serde_json = "1"
+sha2 = "0.10"
+tree-sitter = "0.25"

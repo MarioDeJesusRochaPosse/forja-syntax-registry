@@ -20,7 +20,7 @@
           "sizeBytes": 1229312
         }
       },
-      "queriesSha256": "aefa9e90548ef604a2f285ea5b2be9511bfc110d67734b62adca49c0bad791da"
+      "queriesSha256": "0f0343107f14a7690157f51090a979eb8f8bfe4eada7c61763ddb4c54b1311d1"
     },
     "json": {
       "id": "json",
@@ -40,7 +40,7 @@
           "sizeBytes": 110592
         }
       },
-      "queriesSha256": "6f550109acb7e056ca3298ce391e561c135733d66f0ed2c27b218ef8f3b49b5c"
+      "queriesSha256": "0511524465b56aed122580792254e68b6abbbfde7119f1d02b135acbe278233f"
     },
     "javascript": {
       "id": "javascript",
@@ -60,7 +60,7 @@
           "sizeBytes": 518144
         }
       },
-      "queriesSha256": "e12f8ca9aac3d100af8b681fd3250c772eb604473ff98e546c03dd5f0e50deb1"
+      "queriesSha256": "d3630ae6dc9b2b27b230b5f8bb92b05cd491fb12bff353dae62a0a6d780461ee"
     },
     "typescript": {
       "id": "typescript",
@@ -80,7 +80,7 @@
           "sizeBytes": 1518592
         }
       },
-      "queriesSha256": "818280d99dcb4a6db96eeb609df756fb5fe93764bb5c326803c3d97cec861984"
+      "queriesSha256": "8edcd9e02c08260583161f379233ca14a504b4db01c9468573b3865b831ab23b"
     },
     "python": {
       "id": "python",
@@ -100,7 +100,7 @@
           "sizeBytes": 563712
         }
       },
-      "queriesSha256": "9f49fd193111f87aae61ef51e79e7f67c29a4981532736c4499c25ce86bb1106"
+      "queriesSha256": "a6708f209381618e2b398972c8f1ccd892f0c064eab35a2a3f911c3e22e79a7e"
     },
     "go": {
       "id": "go",
@@ -120,7 +120,7 @@
           "sizeBytes": 325632
         }
       },
-      "queriesSha256": "21c46de21c5baf6b951af7f1fac6a168c804d9cea8fa3185bd199be4fee53160"
+      "queriesSha256": "81182c986547eba7fa6316e82dfd621fb13b8fc89efac85432aee51a48ed0896"
     },
     "c": {
       "id": "c",
@@ -140,7 +140,7 @@
           "sizeBytes": 722944
         }
       },
-      "queriesSha256": "63fc751404616778230f9aaf22810c9eb3a72ada4aee001adf0a277fe5a966e3"
+      "queriesSha256": "3378d854dda695b2b282b9468247524ed4271ef74af691033d2e36883379409c"
     },
     "cpp": {
       "id": "cpp",
@@ -160,7 +160,7 @@
           "sizeBytes": 5719040
         }
       },
-      "queriesSha256": "e1b0ea0b8a2bf833697ea48e24f15e0477246baca90a33124c2c0c2b9bbe5e22"
+      "queriesSha256": "09c6c6ae379494f87a94b662d854fcbd5ecb21c02e9033c39b0db34d2b55db39"
     },
     "java": {
       "id": "java",
@@ -180,7 +180,7 @@
           "sizeBytes": 521728
         }
       },
-      "queriesSha256": "6598e9053c4b59626d1478e04d9f24b3c4bc4e0d29a73e0565e232460781c7f3"
+      "queriesSha256": "576c0df8df0b116cd642140ddc508c01f9d3283582afd8581c1f35caf4d71386"
     },
     "bash": {
       "id": "bash",
@@ -200,7 +200,7 @@
           "sizeBytes": 1485312
         }
       },
-      "queriesSha256": "017d54c7febaf7e65e11f328abfd3b3e53a9c3847c3ef07c63222af86aec53e0"
+      "queriesSha256": "b74220d954f485b7626d2b2b61f37b522e12eb1830803e388e57dd797dc99f11"
     },
     "ruby": {
       "id": "ruby",
@@ -220,7 +220,7 @@
           "sizeBytes": 2245632
         }
       },
-      "queriesSha256": "7f061122d2f5faf9244a7ec5d8a4c3215ab40418931ceb962279670c14d7eb9c"
+      "queriesSha256": "0858de9feece6dcd3408a541f995a34918d587ac2c552096026b0e47e2b332e6"
     },
     "php": {
       "id": "php",
@@ -240,7 +240,7 @@
           "sizeBytes": 1233920
         }
       },
-      "queriesSha256": "61b18025eeaeaa6541d0c953c19f333d295879428c5f468ed4525c929f130a0f"
+      "queriesSha256": "a2a7367659cff3b4be09961c8117d69a9b8703bfc266f8092e089b1760f197e9"
     },
     "csharp": {
       "id": "csharp",
@@ -260,7 +260,7 @@
           "sizeBytes": 5987328
         }
       },
-      "queriesSha256": "eb25865d52e118bb6d0a5d9f41063125f7c02f614073c9ff4a0a382893524c36"
+      "queriesSha256": "499e0859dd43d76e33f76c27ab1b45cf7ddebe4fd4274bd00300025eaf403bf5"
     },
     "toml": {
       "id": "toml",
@@ -280,7 +280,7 @@
           "sizeBytes": 128000
         }
       },
-      "queriesSha256": "ff213009dc0433c3ea82b2abe0c64b93a6ba81bb8bf75e21b8dcc775b48e2f2c"
+      "queriesSha256": "788d7f2a11ececbc4daa52d7ff3571d910f03dffe857bf3d258d4bc4dc65ab2f"
     },
     "yaml": {
       "id": "yaml",
@@ -300,7 +300,7 @@
           "sizeBytes": 341504
         }
       },
-      "queriesSha256": "fc1d10dba58ca6e4bb0b28d0d1e978ea3ff66a202d9ebcad4bcf445de7d62398"
+      "queriesSha256": "2fbfbbd5ca0928d0a7e09e59f8f2964b14a328a7ee0ce799270d9013dcce49a0"
     },
     "lua": {
       "id": "lua",
@@ -320,7 +320,7 @@
           "sizeBytes": 160256
         }
       },
-      "queriesSha256": "124d203554dd5b4884c63563369f2884356b0321e46389a2f4d35de4aa101447"
+      "queriesSha256": "d2625fb712357f86386878602d18845f9f3e90fee81f02a5ecd87be6512918d1"
     },
     "markdown": {
       "id": "markdown",
@@ -340,7 +340,7 @@
           "sizeBytes": 527360
         }
       },
-      "queriesSha256": "5eab471e6eaa99cc82c61ca092fcf65723c95fd6b2e83affe3866cefce0ec2cb"
+      "queriesSha256": "2eb06e766ccd672d49599d14f398f07f4f5f7f2208262993d3cd9207c1078e2f"
     }
   }
 }
