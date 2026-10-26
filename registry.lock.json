@@ -16,7 +16,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/rust-windows-x86_64.dll",
-          "sha256": "522ec6c08e598e2fc80b31f4b0faf2e24ff92ba71f2edf9c57353042a37c3201",
+          "sha256": "27280220c7fbb86f0baaba81aa07b869345f7ee23744b68a98a359741ae7ae55",
           "sizeBytes": 1229312
         }
       },
@@ -36,7 +36,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/json-windows-x86_64.dll",
-          "sha256": "f328cf84c74bddf9da14c376c797d7d840ed6f266a18ee0c203dfa550be04ed0",
+          "sha256": "94b0d9f42c53d1a3a379d8f61c47bcfe57ceb5d16b64760eb530af220c135497",
           "sizeBytes": 110592
         }
       },
@@ -56,7 +56,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/javascript-windows-x86_64.dll",
-          "sha256": "cf086cc8cb7ffe76dda23d5b9ea48fac320e0c157ae674086e2971f507554773",
+          "sha256": "d2df5d84344e854eeb4e1c0fd43eb86eff93c485d2b24de7567407117b47853d",
           "sizeBytes": 518144
         }
       },
@@ -76,7 +76,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/typescript-windows-x86_64.dll",
-          "sha256": "d7a1b3d311041ca88ef04542780f7b46a541d0bd5185b350472baaa52230a81f",
+          "sha256": "60fb8a015bf8928ce6f77fe2411fb28c78d5aeffa8cebaaa35e215646b0eb83e",
           "sizeBytes": 1518592
         }
       },
@@ -96,7 +96,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/python-windows-x86_64.dll",
-          "sha256": "f238ccd1d44eacac12bd2d97237cab74665e546f60cf9942f8c806aa15697642",
+          "sha256": "84a5a2fb36e4b99df91b695be55d5f7da2a5f86045c3b5088480703c9daaa2d0",
           "sizeBytes": 563712
         }
       },
@@ -116,7 +116,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/go-windows-x86_64.dll",
-          "sha256": "9f814a7bad52d3f617483d1e59a0ffa2c9192c7b630a25403480b954ff24d81e",
+          "sha256": "769feef4928baf17b2aa6a943d64092a32f7848281fcda528a0e4573222feeeb",
           "sizeBytes": 325632
         }
       },
@@ -136,7 +136,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/c-windows-x86_64.dll",
-          "sha256": "a8a7cae4b5152e07df3334f8171e23b7a3fb415cf63e7f8e3ff9853e0bf4d1a2",
+          "sha256": "c0fbaf66a92cde94cc3f2da0d344f910a9bc9597b8043bbfb75bea1bac9f5e26",
           "sizeBytes": 722944
         }
       },
@@ -150,13 +150,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/cpp-linux-x86_64.so",
-          "sha256": "e8fa1d16fb47148fc89943d2adce184ef5659631b8f997570527030647a9a5d3",
+          "sha256": "4e6725cee7de8176047df3e87fd68193306f913542e63eb4fc71118dbba38915",
           "sizeBytes": 5604808
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/cpp-windows-x86_64.dll",
-          "sha256": "ac8dd2df7af0b7f999051ecde7f2edc84c0cc8a42a874e7d4922ef9b3fc059ca",
+          "sha256": "5aed7b2d34d8c37f0f3a5f5ebed4bcbbce359d3d454892f3ea1e9083b104295b",
           "sizeBytes": 5719040
         }
       },
@@ -176,7 +176,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/java-windows-x86_64.dll",
-          "sha256": "eeafc96e1dffa048d1f4436f75338393949b53b175c9779f5a5a2d771da3b3f0",
+          "sha256": "a632f52de042190653d6d3191e0fb4595dce7da3a0d23eee1e7f94ddd7d28689",
           "sizeBytes": 521728
         }
       },
@@ -190,13 +190,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/bash-linux-x86_64.so",
-          "sha256": "f1598268846a1461825fd69cad2d4b6c002da47d56cf36de2317f201c44c4777",
+          "sha256": "bd6efdcfc88f56fc736104083696b4af5522c715cad6ae092ed8b169b015702d",
           "sizeBytes": 1364328
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/bash-windows-x86_64.dll",
-          "sha256": "a4a5225e289d612871c0401a576a9c12cdf86523f7bc68f5afd63545fc96f9f2",
+          "sha256": "7c7b345361ae54e3ee02318a18f001541437a70f474d0228bad99128231ef08c",
           "sizeBytes": 1485312
         }
       },
@@ -210,13 +210,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/ruby-linux-x86_64.so",
-          "sha256": "a95a3e9dce49d93c6fca6b34b06588a9e5abf2441a7994a443cc5fd42eab6911",
+          "sha256": "b825bf18ac95be96a5d260f0de3db36ccb055df41b8263220215de20c33f75a8",
           "sizeBytes": 2120776
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/ruby-windows-x86_64.dll",
-          "sha256": "2768f34251dd0dac38f7e84e4c5a120a110b43f54bf534c7cd9d4465fa0fe541",
+          "sha256": "d490c4d44c303e52b99306e177a884d0267d0f4d2c4e0706476396b5eae9e95c",
           "sizeBytes": 2245632
         }
       },
@@ -230,13 +230,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/php-linux-x86_64.so",
-          "sha256": "c8b0091fc003b8022293d13aed79afa1391cffe36b8e7275e5d9c6a5b47ef185",
+          "sha256": "87c52a418f6ff4c4ea0c21781b3f1edce9383a1244f96ccb1d25c64d32d16dab",
           "sizeBytes": 1116848
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/php-windows-x86_64.dll",
-          "sha256": "35ff6d2fcbe1b1ca9eee404957e6eda48d41aee71f5fe6efa9a43abff6c6c822",
+          "sha256": "509c04a61bbc1708914ff31df8014716ad56ca10c165cbbf1aeea4add90bacc1",
           "sizeBytes": 1233920
         }
       },
@@ -250,13 +250,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/csharp-linux-x86_64.so",
-          "sha256": "772d5d3725964c8d734e174d27145df8d279a5f0ae0e261ad7a9b22a4a81d1e2",
+          "sha256": "c566887c857f7e1ad9997ae155cdb5ad339695f9cc791607d5f9ed63db93de78",
           "sizeBytes": 5863456
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/csharp-windows-x86_64.dll",
-          "sha256": "09ebea5d4eedfdee47d9615e2b4e183608b70fbd92848bf950bbf7cf1ce34201",
+          "sha256": "2d31002eb766657543a8e6980ff258e4bdfcd987f1c131ae033024cb768c1c68",
           "sizeBytes": 5987328
         }
       },
@@ -276,7 +276,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/toml-windows-x86_64.dll",
-          "sha256": "e85735191b2a4d409fe236571ec6ea6f90e606ff0f599f5ce415f8010304800d",
+          "sha256": "7c663ba4db2eba9fe390cc920d3824bb7110a80f32bdf56a1c5b1e0c1433b61a",
           "sizeBytes": 128000
         }
       },
@@ -290,13 +290,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/yaml-linux-x86_64.so",
-          "sha256": "ee81c99943799ba90bf1b410921cc3d311c9ed55ec7fbce20df8c6e98358fa7c",
+          "sha256": "f5570cb8b07dc1e21505b5c205f5df0ed4cc0f50e4882c49b26bf17f31c429d8",
           "sizeBytes": 218464
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/yaml-windows-x86_64.dll",
-          "sha256": "da905eae97bcf726501b6e78d734ac90cdd6886a46efca81a47dcedbc7c22f33",
+          "sha256": "b38e735202289d307861f723992042b1e2bfe76e5f88d1555ce76cfd661edb49",
           "sizeBytes": 341504
         }
       },
@@ -316,7 +316,7 @@
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/lua-windows-x86_64.dll",
-          "sha256": "c029e677b348f2eefaf06bd4807a59e7fd7ac6f7bfc57e3263bbb758fb3c0cae",
+          "sha256": "35a2c8065358de539f7b55f216006e436ec7d637777493a7476c816bf12de95c",
           "sizeBytes": 160256
         }
       },
@@ -330,13 +330,13 @@
         "linux-x86_64": {
           "target": "linux-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/markdown-linux-x86_64.so",
-          "sha256": "154f75d4cfe3f644b8439cb448f4a3ae9aceef0850e78dc9819d7e5262bb182a",
+          "sha256": "558d818f9e52262d242110c312db3f71ca6deb91d0842b4b57058496ab089fbb",
           "sizeBytes": 401392
         },
         "windows-x86_64": {
           "target": "windows-x86_64",
           "url": "https://github.com/MarioDeJesusRochaPosse/forja-syntax-registry/releases/download/grammars/markdown-windows-x86_64.dll",
-          "sha256": "ccbd0303d818c2656688c55bfd43f01b6072af3a6a51171aa3c06afe75360f33",
+          "sha256": "c4ac0745e962a44355fdf746304d7d044e6203947f1d81ce81b2b1074cda1f3c",
           "sizeBytes": 527360
         }
       },
